@@ -1,0 +1,126 @@
+.form1 {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+legend {
+  color: crimson;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  border: none;
+}
+
+legend h4 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 110px;
+  color: crimson;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-color: crimson;
+  background-color: #222;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.radio-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+input[type="submit"] {
+  background-color: blue;
+  color: white;
+}
+
+input[type="reset"] {
+  background-color: crimson;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #170fa7f7;
+  opacity: 0.8;
+}
+
+input[type="reset"]:hover {
+  background-color: #b20000;
+  opacity: 0.8;
+}
+
+.note {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.buttons{
+  justify-content: center;
+}

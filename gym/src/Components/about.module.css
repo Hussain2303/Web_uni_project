@@ -1,0 +1,148 @@
+
+* {
+  margin: 2px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+.container {
+    position: relative;
+  width: 100%;
+  min-height: 100vh; 
+  padding-bottom: 100px; 
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.quoteBanner {
+  position: absolute;
+  top: 70%;
+  left: 12%;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.quoteBanner h1 {
+  font-size: 52px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.quoteBanner p {
+  font-size: 22px;
+  font-style: italic;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  z-index: -2;
+  animation: fadeIn 0.8s ease-in-out both;
+  filter: brightness(0.2);
+  object-fit: cover;
+}
+
+table {
+  width: 85%;
+  margin: 60px auto;
+  border-collapse: collapse;
+  background: #1c1c1c;
+  animation: fadeIn 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+table:hover {
+  box-shadow: 0 0 10px crimson;
+}
+
+table th {
+  background: rgb(186, 111, 126);
+  color: white;
+  font-size: 26px;
+  padding: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+table td {
+  padding: 25px;
+  border: 1px solid #444;
+  vertical-align: middle;
+  transition: background 0.3s ease;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+img {
+  transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.951);
+}
+
+table tr:hover td {
+  background-color: #2b2b2b;
+}
+
+table td img {
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+table td img:hover {
+  transform: scale(1.05);
+}
+
+.aboutTableRow {
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#td-image img {
+  height: 30px;
+  width: 30px;
+}
+
+#td-image li {
+  list-style: none;
+}
+h1 {
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+h1:hover {
+  text-shadow: 0 0 20px crimson;
+}

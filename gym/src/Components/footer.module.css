@@ -1,0 +1,112 @@
+*{
+    background-color: black;
+    color: white;
+}
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px 20px;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .footerContainer {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.contact h3,
+.socialMedia h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+}
+
+.contact h3:hover,
+.socialMedia h2:hover {
+    color: crimson;
+    transform: translateY(-2px);
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact li {
+    margin: 10px 0;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact li:hover {
+    color: crimson;
+    transform: translateX(5px);
+}
+
+.contact li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact li a:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+
+.socialMedia .icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(220, 20, 60, 0.5);
+}
+
+.footerText {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #bbb;
+    text-align: center;
+}
+
+.footerText span:hover {
+    color: crimson;
+    transform: translateY(-2px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
