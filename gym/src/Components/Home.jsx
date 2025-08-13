@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Home.module.css';
+import styles from './home.module.css';
 import anush from '../assets/pexels-anush-1229356.jpg';
 import sl from '../assets/pexels-823sl-2294361.jpg';
 import victor from '../assets/pexels-victorfreitas-841130.jpg';
